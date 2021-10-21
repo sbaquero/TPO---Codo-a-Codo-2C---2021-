@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: content-box;
+}
+body {
+  width: 1366px;
+}
+header {
+  height: 100px;
+  background-image: url("banner.jpg");
+  background-size: 1366px;
+}
+.banner {
+  box-sizing: border-box;
+  height: 100px;
+  padding-left: 1%;
+  padding-right: 1%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin-left: 10px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  background-image: url(logo.jpg);
+  background-size: 100%;
+  text-align: center;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo > div {
+  transform: rotate(-10deg);
+  width: 80px;
+}
+.logo > div > a {
+  outline: none;
+  color: rgb(24, 27, 20);
+  text-decoration: none;
+}
+.titulo {
+  width: 400px;
+  height: 90px;
+  text-align: center;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 22px;
+  color: bisque;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.redes {
+  width: 120px;
+  height: 80px;
+  padding-right: 10px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 15px;
+  color: bisque;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+.redes > .grid-item {
+  text-align: center;
+  color: bisque;
+}
+.redes > div > a {
+  outline: none;
+  color: bisque;
+  text-decoration: none;
+}
+.menu {
+  height: 50px;
+  background-image: url(papel.jpg);
+  background-size: 1366px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu > div {
+  width: 250px;
+  text-align: center;
+}
+.menu > div > a {
+  outline: none;
+  color: rgb(24, 27, 20);
+  text-decoration: none;
+}
+main {
+  background-image: url(fc_fondo.jpg);
+  background-size: 1366px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.lanzamiento {
+  box-sizing: border-box;
+  display: grid;
+  /*overflow: hidden;*/
+  grid-template-columns: 560px auto 400px;
+  grid-template-rows: 350px 350px;
+}
+.lanzamiento > div > img {
+  padding-top: 15px;
+  padding-left: 15px;
+  height: 150px;
+  width: auto;
+}
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.item3 > iframe {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.item5 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+.animado {
+  height: 36px;
+  width: 200px;
+  background-color: antiquewhite;
+  font-family: "Viga", sans-serif;
+  font-size: 30px;
+  color: crimson;
+  text-align: center;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: crimson;
+}
+.animado:hover {
+  animation: mianimacion 3s ease 0.5s infinite normal forwards running;
+  animation-duration: 1s;
+}
+@keyframes mianimacion {
+  25% {
+    transform: scale(1.2) rotate(-3deg);
+    background: gold;
+  }
+  50% {
+    background: goldenrod;
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    background: orangered;
+    color: bisque;
+  }
+}
+footer {
+  height: 90px;
+  box-sizing: border-box;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-image: url("banner.jpg");
+  background-size: 1366px;
+  color: bisque;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Merriweather Sans", sans-serif;
+}
+.pago {
+  width: 200px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 12px;
+}
+.direccion {
+  width: 200px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 16px;
+}
+.pago > i {
+  display: inline;
+}
